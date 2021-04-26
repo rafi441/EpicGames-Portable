@@ -181,7 +181,7 @@ namespace EpicPortable
             if (!Directory.Exists(LauncherPath))
             {
                 MessageBox.Show(new Form { TopMost = true }, "Cannot Find Launcher", "Rafi Launcher", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(0);
+                Application.Exit();
             }
 
             if (File.Exists(path))
